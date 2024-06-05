@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Tickets</title>
+    <link rel="stylesheet" href="/assets/css/supportTickets/supporttickets.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <i id="menu-bar" class='bx bx-menu'></i>
+            <h1>Ser<span>veX</span></h1>
+            <div>
+                <div class="bell">
+                    <img src="/assets/images/translator/Icons/fi-rr-bell-ring.svg" alt="">
+                </div>
+
+                <div class="light">
+                    <p>Light</p>
+                    <img src="/assets/images/translator/Icons/fi-rr-caret-down.svg" alt="">
+                </div>
+
+                <div class="en">
+                    <p>EN</p>
+                    <img src="/assets/images/translator/Icons/fi-rr-caret-down.svg" alt="">
+                </div>
+
+                <div class="profile">
+                    <p>Abdul Wahab</p>
+                    <img src="/assets/images/translator/user-img.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+
+            <!-- Menu Bar -->
+            <div class="left-menu">
+                <div>
+                    <div class="bell">
+                        <img src="/assets/images/translator/Icons/fi-rr-bell-ring.svg" alt="">
+                    </div>
+
+                    <div class="light">
+                        <p>Light</p>
+                        <img src="/assets/images/translator/Icons/fi-rr-caret-down.svg" alt="">
+                    </div>
+
+                    <div class="en">
+                        <p>EN</p>
+                        <img src="/assets/images/translator/Icons/fi-rr-caret-down.svg" alt="">
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="/assets/images/translator/Icons/dashboard.svg" alt=""> Dashboard</a>
+                        </li>
+
+                        <li><a href="#"><img src="/assets/images//dashboard/translation.svg" alt=""> Translation</a>
+                        </li>
+
+                        <li><a href="#"><img src="/assets/images/translator/Icons/transaction.svg" alt="">
+                                Transactions</a></li>
+
+                        <li><a href="#" class="active"><img src="/assets/images/translator/Icons/support.svg" alt="">
+                                Support Tickets</a></li>
+
+                        <li><a href="#"><img src="/assets/images/translator/Icons/setting.svg" alt=""> Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Support Tickets -->
+            <div class="support-wrapper">
+                <h2>Support Tickets</h2>
+
+                <div class="search-menus">
+                    <div class="search-container">
+                        <img src="/assets/images/translator/Icons/search.svg" alt="">
+                        <form action="#">
+                            <input type="text" class="search-box" name="q" placeholder="Search languages...">
+                        </form>
+                    </div>
+                    <div class="support-menus">
+                        <h3 class="all-active">All <p class="all">3</p>
+                        </h3>
+                        <h3>Pending <p class="pending">1</p>
+                        </h3>
+                        <h3>Resolved <p class="resolved">1</p>
+                        </h3>
+                        <h3>Cancelled <p class="cancelled">1</p>
+                        </h3>
+                    </div>
+                </div>
+                <!--Table start here-->
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 200px;">From</th>
+                                <th style="width: 200px;">User type</th>
+                                <th style="width: 200px;">Subject</th>
+                                <th style="width: 400px;">Description</th>
+                                <th style="width: 200px;">Actions</th>
+                                <th style="width: 200px;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="img"><img src="/assets/images/translator/user-img.png" alt=""> Ryan</td>
+                                <td>Admin</td>
+                                <td>Withdraw</td>
+                                <td>I want to Withdraw $500</td>
+                                <td class="pending">Pending</td>
+                                <td><i class="fa-solid fa-message"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="img"><img src="/assets/images/translator/user-img.png" alt=""> The Helper</td>
+                                <td>Support</td>
+                                <td>Responce Rate</td>
+                                <td>My Responce rate has dropped</td>
+                                <td class="resolve">Resolve</td>
+                                <td><i class="fa-solid fa-message"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="img"><img src="/assets/images/translator/user-img.png" alt=""> The Dev</td>
+                                <td>Developer</td>
+                                <td>Bug</td>
+                                <td>I can't transfer to...</td>
+                                <td class="closed">Closed</td>
+                                <td><i class="fa-solid fa-message"></i></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Buttons-->
+                <div class="buttons" style="margin-left: auto;">
+                    <button><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="active-button">01</button>
+                    <button>02</button>
+                    <button><i class="fa-solid fa-ellipsis"></i></button>
+                    <button>09</button>
+                    <button>10</button>
+                    <button><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="/assets/js//translation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servex</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-wrapper">
+        <header>
+            <div class="logo-wrapper">
+                <img class="theme-img logo" src="./assets/images/dashboard/logo.png" alt="">
+            </div>
+    
+            <div class="header-right">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#"><img class="theme-img" src="./assets/images/icons/service.svg" alt=""> Services</a></li>
+        
+                        <li><a href="#"><img class="theme-img" src="./assets/images/icons/account.svg" alt=""> Accounts</a></li>
+        
+                        <li><a href="#"><img class="theme-img" src="./assets/images/icons/game.svg" alt=""> Games</a></li>
+        
+                        <li><a href="#"><img class="theme-img" src="./assets/images/icons/gift.svg" alt=""> Gift Codes</a></li>
+        
+                        <li><a href="#"><img class="theme-img" src="./assets/images/icons/course.svg" alt=""> Courses</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="tools-wrapper">
+                    <div class="tools">
+
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/earth.svg" alt="">
+                        </div>
+
+                        <div id="theme-changer">
+                            <img class="theme-img" src="./assets/images/icons/moon.svg" alt="">
+                        </div>
+        
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/bell.svg" alt="">
+                        </div>
+        
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/message.svg" alt="">
+                        </div>
+        
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/wallet.svg" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="user"></div>
+                </div>
+    
+                <i id="menu" class='bx bx-menu'></i>
+            </div>
+        </header>
+
+        <div class="responsive-header">
+            <div class="tools-wrapper">
+                <div class="tools">
+                    <div id="theme-changer">
+                        <img class="theme-img" src="./assets/images/icons/moon.svg" alt="">
+                    </div>
+    
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/earth.svg" alt="">
+                    </div>
+    
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/bell.svg" alt="">
+                    </div>
+    
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/message.svg" alt="">
+                    </div>
+    
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/wallet.svg" alt="">
+                    </div>
+                </div>
+    
+                <div class="user"></div>
+            </div>
+
+            <nav class="responsive-navbar">
+                <ul>
+                    <li><a href="#"><img class="theme-img" src="./assets/images/icons/service.svg" alt=""> Services</a></li>
+    
+                    <li><a href="#"><img class="theme-img" src="./assets/images/icons/account.svg" alt=""> Accounts</a></li>
+    
+                    <li><a href="#"><img class="theme-img" src="./assets/images/icons/game.svg" alt=""> Games</a></li>
+    
+                    <li><a href="#"><img class="theme-img" src="./assets/images/icons/gift.svg" alt=""> Gift Codes</a></li>
+    
+                    <li><a href="#"><img class="theme-img" src="./assets/images/icons/course.svg" alt=""> Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="container">
+        <div class="wallet">
+            <h2>Wallet</h2>
+            <div class="wallet-content">
+
+                <div class="wallet-left">
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/balance.svg" alt="">
+                        <div>
+                            <p>Balance</p>
+                            <p>$41,210</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/income.svg" alt="">
+                        <div>
+                            <p>Income</p>
+                            <p>$41,210</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-left">
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/expenses.svg" alt="">
+                        <div>
+                            <p>Expenses</p>
+                            <p>$41,210</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/saving.svg" alt="">
+                        <div>
+                            <p>Savings</p>
+                            <p>$41,210</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="wallet-right">
+                    <div>
+                        <h6>Claim code</h6>
+                    </div>
+                    <div>
+                        <h6>Transfer</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="overview">
+                <div id="chart2"></div>
+            </div>
+            <div class="item2">
+
+                <!-- Withdraw -->
+                <div class="withdraw">
+                    <div>
+                        <h6>Withdraw amount</h6>
+                        <p>Max limit: $2,000</p>
+                    </div>
+                    <h5>$41,210.00</h5>
+
+                    <div class="payment-method">
+                        <h4>Set up payment method</h4>
+                        <div>
+                            <div>
+                                <img class="theme-img" src="./assets/images/icons/paypal.svg" alt="">
+                                <h6>Paypal</h6>
+                            </div>
+                            <img class="theme-img" src="./assets/images/icons/Bill-Check.svg" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+                                <img class="theme-img" src="./assets/images/icons/bank.svg" alt="">
+                                <h6>Bank account</h6>
+                            </div>
+                            <img class="theme-img" src="./assets/images/icons/Bill-Cross.svg" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+                                <img class="theme-img" src="./assets/images/icons/crypto.svg" alt="">
+                                <h6>Cryptocurrency</h6>
+                            </div>
+                            <img class="theme-img" src="./assets/images/icons/Bill-Check.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="withdraw-amount">
+                        <input type="text" placeholder="Enter amount">
+                        <button>Withdraw</button>
+                    </div>
+                </div>
+
+                <!-- Deposit Amount -->
+
+                <div class="deposit">
+                    <h6>Deposit amount</h6>
+
+                    <div>
+                        <input type="text" placeholder="Enter amount">
+                        <p>Max limit: $2,000</p>
+                    </div>
+
+                    <div class="deposit-method">
+                        <h6>Set up payment method</h6>
+
+                        <div>
+                            <div>
+                                <img class="theme-img" src="./assets/images/icons/crypto.svg" alt="">
+                                <h4>Cryptocurrency</h4>
+                            </div>
+
+                            <div>
+                                <img class="theme-img" src="./assets/images/icons/credit.svg" alt="">
+                                <h4>Credit Card</h4>
+                            </div>
+
+                            <div>
+                                <img class="theme-img" src="./assets/images/icons/apple_icon 1.svg" alt="">
+                                <h4>Pay</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity -->
+            <div class="activity-wrapper">
+                <h6>Activity</h6>
+                <div id="chart"></div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="achievements-wrapper">
+                <div>
+                    <img class="theme-img" src="./assets/images/icons/achievement-award.svg" alt="">
+                    <h6>Achievements</h6>
+                </div>
+
+                <div>
+                    <div class="achievement">
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/icons8_services.svg" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+                                <h6>Services</h6>
+                                <p>$7,860 <span>/$10,000</span></p>
+                            </div>
+                            <div class="bar bar1"></div>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/gift-code.svg" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+                                <h6>Gift Codes</h6>
+                                <p>$5,000 <span>/$10,000</span></p>
+                            </div>
+                            <div class="bar bar2"></div>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/user.svg" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+                                <h6>Accounts</h6>
+                                <p>$3,240 <span>/$10,000</span></p>
+                            </div>
+                            <div class="bar bar3"></div>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/book.svg" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+                                <h6>Courses</h6>
+                                <p>$2,540 <span>/$10,000</span></p>
+                            </div>
+                            <div class="bar bar4"></div>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <div>
+                            <img class="theme-img" src="./assets/images/icons/game2.svg" alt="">
+                        </div>
+
+                        <div>
+                            <div>
+                                <h6>Games</h6>
+                                <p>$1,540 <span>/$10,000</span></p>
+                            </div>
+                            <div class="bar bar5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent transaction -->
+            <div class="recent-transaction">
+                <div>
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/grommet-icons_transaction.svg" alt="">
+                        <h6>Recent Transaction</h6>
+                    </div>
+                    <p>See all</p>
+                </div>
+
+                <div class="transaction-wrapper">
+                    <div>
+                        <img src="./assets/images/dashboard/person1.jpeg" alt="">
+                        <div>
+                            <p>Sold <span>Account</span> to</p>
+                            <p>Matheus Ferrero</p>
+                        </div>
+                    </div>
+                    <p>+$54.08</p>
+                </div>
+
+                <div class="transaction-wrapper">
+                    <div>
+                        <img src="./assets/images/dashboard/person2.jpeg" alt="">
+                        <div>
+                            <p>Bought <span>Service</span> from</p>
+                            <p>Floyd Miles</p>
+                        </div>
+                    </div>
+                    <p>-$39.65</p>
+                </div>
+
+                <div class="transaction-wrapper">
+                    <div>
+                        <img src="./assets/images/dashboard/person3.jpeg" alt="">
+                        <div>
+                            <p>Bought <span>Course</span> from</p>
+                            <p>Jerome Bell</p>
+                        </div>
+                    </div>
+                    <p>-$29.78</p>
+                </div>
+
+                <div class="transaction-wrapper">
+                    <div>
+                        <img src="./assets/images/dashboard/person4.jpeg" alt="">
+                        <div>
+                            <p>Bought <span>Game</span> from</p>
+                            <p>Ralph Edwards</p>
+                        </div>
+                    </div>
+                    <p>-$46.61</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- footer -->
+<div class="footer-wrapper">
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="logo-wrapper">
+                    <img class="theme-img footer-logo" src="./assets/images/dashboard/footer-logo.png" alt="">
+                </div>
+                <div class="social-icons">
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/discord.svg" alt="">
+                    </div>
+
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/instagram.svg" alt="">
+                    </div>
+
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/youtube.svg" alt="">
+                    </div>
+
+                    <div>
+                        <img class="theme-img" src="./assets/images/icons/twitter.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <form action="#">
+                        <label for="donationAmount">Donate and help us grow</label>
+                        <input type="text" id="donationAmount" name="donationAmount" placeholder="$10">
+                        <button>DONATE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="links-wrapper">
+                <ul>
+                    <li><a href="#">Marketplaces</a></li>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Gift Codes</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="links-wrapper">
+                <ul>
+                    <li><a href="#">Policies & Support</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Report abuse</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="links-wrapper">
+                <ul>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Memberships</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rights">
+            <p>Hire professionals on Servex</p>
+            <div>
+                <p>Save <span>money</span> and countless <span>hours</span> on finding permanent resources</p>
+
+                <p>All rights reserved for <span>SERVEX</span></p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <!-- Include ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
